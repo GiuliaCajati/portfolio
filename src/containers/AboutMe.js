@@ -12,8 +12,6 @@ const useStyles = makeStyles({
 
 const AboutMe = () => {
     const classes = useStyles();
-
-
     return (
         <React.Fragment>
             <CssBaseline />
@@ -24,9 +22,7 @@ const AboutMe = () => {
                 </Container>  
             </Container>
         </React.Fragment>
-
     )
-
 }
 
 export default AboutMe

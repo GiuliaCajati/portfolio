@@ -1,6 +1,4 @@
 import React from 'react';
-
-// import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
@@ -12,6 +10,9 @@ const useStyles = makeStyles({
     },
     image:{
         paddingLeft:'10'
+    },
+    title:{
+        color:'white'
     }
   });
 
@@ -24,7 +25,7 @@ const Welcome = () => {
                 <Container maxWidth="xl" className={classes.container}>
                 <Container className={classes.image}>
                     <img src="https://i.imgur.com/sKK0feZ.png"/>
-                    <h1>GIULIA's PORTFOLIO</h1>
+                    <h1 className="title">GIULIA's PORTFOLIO</h1>
                 </Container>
             </Container>
         </React.Fragment>

@@ -4,12 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
-
     container:{
         backgroundColor: '#cfe8fc', 
         height: '80vh',
     },
-
   });
 
 const Projects = () => {
@@ -21,7 +19,7 @@ const Projects = () => {
             <CssBaseline />
                 <Container maxWidth="xl" className={classes.container}>
                 <Container className={classes.welcome}>
-                PROJECTS
+                Projects
 
                 </Container>  
             </Container>
