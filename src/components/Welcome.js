@@ -5,15 +5,13 @@ import Container from '@material-ui/core/Container';
 const useStyles = makeStyles({
     container:{
         backgroundColor: 'black', 
-        height: '80vh',
-        width: '100%'
+        height: '100vh',
+        width: '100%',
+        color: 'white',
+        fontSize: 80,
+        marginTop:'-10'
     },
-    image:{
-        paddingLeft:'10'
-    },
-    title:{
-        color:'white'
-    }
+  
   });
 
 const Welcome = () => {
@@ -21,17 +19,16 @@ const Welcome = () => {
 
 
     return (
-        <React.Fragment>
-                <Container maxWidth="xl" className={classes.container}>
-                <Container className={classes.image}>
-                    <img src="https://i.imgur.com/sKK0feZ.png"/>
-                    <h1 className="title">GIULIA's PORTFOLIO</h1>
-                </Container>
-            </Container>
-        </React.Fragment>
-
+    <React.Fragment>
+        <Container maxWidth="xl" className={classes.container}>
+                <b>WELCOME TO GIULIA's PORTFOLIO</b> 
+                <img src="https://i.imgur.com/sKK0feZ.png"/>  
+        </Container>
+        {/* <Container className={classes.image}>
+                
+            </Container> */}
+    </React.Fragment>
     )
-
 }
 
 export default Welcome
