@@ -18,6 +18,13 @@ const AboutMe = () => {
                 <Container maxWidth="xl" className={classes.container}>
                 <Container className={classes.welcome}>
                 ABOUT ME
+                Graph with language knowledge
+                Graph with interests 
+                Link to Blog?
+                Link to resume 
+                Link to Linked in 
+                "https://www.linkedin.com/in/giuliacajati/"
+                "https://github.com/GiuliaCajati"
 
                 </Container>  
             </Container>

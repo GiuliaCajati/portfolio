@@ -40,7 +40,8 @@ import Container from '@material-ui/core/Container';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginLeft: '2%'
+    marginLeft: '2%',
+    marginBottom: '2%'
   },
   paper: {
     padding: theme.spacing(1),
@@ -62,17 +63,17 @@ export default function NestedGrid() {
     return (
       <React.Fragment>
         <Grid item xs={4}>
-          <Paper className={classes.paper}><img className={classes.image} alt="hotel toolkit" src="https://i.imgur.com/cBy9Pa2.png"/></Paper>
-          {/* login "https://i.imgur.com/pEMjPFq.png" */}
+          <Paper className={classes.paper}><img className={classes.image} alt="hotel toolkit" src="https://i.imgur.com/pEMjPFq.png"/></Paper>
+          {/* "https://i.imgur.com/cBy9Pa2.png" */}
         </Grid>
         <Grid item xs={4}>
-          <Paper className={classes.paper}><img className={classes.image} alt="bon appetit" src="https://i.imgur.com/vrGfOmV.png"/></Paper>
-          {/* "https://i.imgur.com/297AXe1.png" */}
+          <Paper className={classes.paper}><img className={classes.image} alt="bon appetit" src="https://i.imgur.com/297AXe1.png"/></Paper>
+          {/* "https://i.imgur.com/vrGfOmV.png" */}
         </Grid>
         <Grid item xs={4}>
-          <Paper className={classes.paper}>items</Paper>
+          <Paper className={classes.paper}><img className={classes.image} alt="fetch a date" src="https://i.imgur.com/1HVBgZc.jpg"/></Paper>
+          {/* "https://i.imgur.com/LlYIgAe.jpg" */}
         </Grid>
-    
       </React.Fragment>
     );
   }
@@ -81,9 +82,6 @@ export default function NestedGrid() {
     <div className={classes.root}>
         <b>PROJECTS</b>
       <Grid container spacing={1}>
-        <Grid container item xs={12} spacing={3}>
-          <FormRow />
-        </Grid>
         <Grid container item xs={12} spacing={3}>
           <FormRow />
         </Grid>
