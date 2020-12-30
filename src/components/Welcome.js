@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 const useStyles = makeStyles({
     container:{
         backgroundColor: 'black', 
-        height: '100vh',
+        height: '200vh',
         width: '100%',
         color: 'white',
         fontSize: 80,
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 const Welcome = () => {
     const classes = useStyles();
     const [hover, setHover] = useState(true)
-    
+
     const toggleHover = () => {
         setHover(!hover)
     }
