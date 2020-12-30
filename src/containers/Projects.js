@@ -1,47 +1,15 @@
-// import React from 'react';
-// import CssBaseline from '@material-ui/core/CssBaseline';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Container from '@material-ui/core/Container';
-
-// const useStyles = makeStyles({
-//     container:{
-//         backgroundColor: '#cfe8fc', 
-//         height: '80vh',
-//     },
-//   });
-
-// const Projects = () => {
-//     const classes = useStyles();
-
-
-//     return (
-//         <React.Fragment>
-//             <CssBaseline />
-//                 <Container maxWidth="xl" className={classes.container}>
-//                 <Container className={classes.welcome}>
-//                 Projects
-
-//                 </Container>  
-//             </Container>
-//         </React.Fragment>
-
-//     )
-
-// }
-
-// export default Projects
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Container from '@material-ui/core/Container';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     marginLeft: '2%',
-    marginBottom: '2%'
+    marginBottom: '2%',
+    fontSize: 80,
   },
   paper: {
     padding: theme.spacing(1),
