@@ -1,7 +1,7 @@
 
 import './App.css';
 import NavBar from './containers/NavBar'
-import Projects from './containers/Projects'
+import ProjectsPage from './containers/ProjectsPage'
 import AboutMe from './containers/AboutMe'
 import Welcome from './components/Welcome'
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Welcome/>
       {/* <NavBar/> */}
-      <Projects/>
+      <ProjectsPage/>
       <AboutMe/>
     </div>
   );

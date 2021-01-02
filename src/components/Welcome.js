@@ -11,12 +11,7 @@ const useStyles = makeStyles({
         fontSize: 80,
         marginTop:'-10'
     },
-  
   });
-
-
-
-
 
 const Welcome = () => {
     const classes = useStyles();
