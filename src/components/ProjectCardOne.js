@@ -4,12 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      marginLeft: '2%',
-      marginBottom: '2%',
-      fontSize: 80,
-    },
     paper: {
       padding: theme.spacing(1),
       textAlign: 'center',

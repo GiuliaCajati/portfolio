@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     marginLeft: '2%',
     marginBottom: '2%',
+  },
+  title: {
     fontSize: 80,
   },
   paper: {
@@ -37,9 +39,9 @@ export default function ProjectsPage() {
   function FormRow() {
     return (
         <React.Fragment>
-          <ProjectCard/>
-          <ProjectCardOne/>
-          <ProjectCardTwo/>
+          <ProjectCard />
+          <ProjectCardOne />
+          <ProjectCardTwo />
             {/* <Grid item xs={4}>
                 <Paper className={classes.paper}>
                     <img className={classes.image} 
@@ -72,7 +74,7 @@ export default function ProjectsPage() {
 
   return (
     <div className={classes.root}>
-        <b>PROJECTS</b>
+        <b className={classes.title}>PROJECTS</b>
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <FormRow />
