@@ -32,11 +32,16 @@ const AboutMe = () => {
                 <Container className={classes.about}>
                 <b className={classes.title}>ABOUT ME</b>
                 <Paper className={classes.skills}>
-                    Skills:
+                    Tools and Technologies:
                     <List>
                         <ListItem>Javascript</ListItem>
+                        <ListItem>SQL</ListItem>
+                        <ListItem>Redux</ListItem>
                         <ListItem>React.js</ListItem>
-                        <ListItem></ListItem>
+                        <ListItem>CSS</ListItem>
+                        <ListItem>HTML</ListItem>
+                        <ListItem>GitHub</ListItem>
+                        <ListItem>Material UI</ListItem>
                     </List>
                 Graph with interests 
                 Link to Blog?
