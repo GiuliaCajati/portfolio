@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -39,9 +40,13 @@ const ProjectCardTwo = () => {
                 :
                     <Paper className={classes.paper}>
                         <div onClick={toggleDisplay}>
-                                Project info
-                                Languages 
-                                link to video
+                            <List>
+                                <ListItem><b>Overview</b></ListItem>
+                                <ListItem><b>Languages Used:</b></ListItem>
+                                <ListItem><b>Link:</b></ListItem>
+                                <ListItem><b>GitHub:</b></ListItem>
+                                <ListItem><b>Demo:</b></ListItem>
+                            </List>
                         </div>
                     </Paper>
             }

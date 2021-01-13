@@ -49,19 +49,27 @@ const AboutMe = () => {
                 </Paper>
             
                 <List>
-                    <ListItem>
-                    <img className={classes.logo} src="https://i.imgur.com/ya0lvus.png" alt="github"/>
+                    <ListItem >
+                        <a href="https://github.com/GiuliaCajati">
+                            <img className={classes.logo} 
+                            src="https://i.imgur.com/ya0lvus.png" 
+                            alt="github"/>
+                        </a>
                     </ListItem>
                     <ListItem>
-                    <img className={classes.logo} src="https://i.imgur.com/HymmnzB.png" alt="linkedin"/>
+                        <a href="https://www.linkedin.com/in/giuliacajati/">
+                            <img className={classes.logo} src="https://i.imgur.com/HymmnzB.png" alt="linkedin"/>
+                        </a>
                     </ListItem>
                     <ListItem>
-                    <img className={classes.logo} src="https://i.imgur.com/0SETXjc.png" alt="medium"/>
+                        <a href="https://giuliacajati.medium.com/">
+                            <img className={classes.logo} src="https://i.imgur.com/0SETXjc.png" alt="medium"/>
+                        </a>
                     </ListItem>
                 </List>
  
                 "https://www.linkedin.com/in/giuliacajati/"
-                "https://github.com/GiuliaCajati"
+                
 
                 </Container>  
             </Container>
