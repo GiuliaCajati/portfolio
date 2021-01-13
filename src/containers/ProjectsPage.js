@@ -15,59 +15,24 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: 80,
   },
-  paper: {
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
-  image: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-  },
 }));
 
 export default function ProjectsPage() {
   const classes = useStyles();
   const [project, setProject] = useState("")
-  //conditionally render project based on selection 
-  //switch statement for three projects 
-  //each have a different page 
-
 
   function FormRow() {
     return (
         <React.Fragment>
-          <ProjectCard />
-          <ProjectCardOne />
-          <ProjectCardTwo />
-            {/* <Grid item xs={4}>
-                <Paper className={classes.paper}>
-                    <img className={classes.image} 
-                    alt="hotel toolkit" 
-                    src="https://i.imgur.com/pEMjPFq.png"/>
-                    "https://i.imgur.com/cBy9Pa2.png"
-                </Paper>
-            </Grid> */}
-
-            {/* <Grid item xs={4}>
-                <Paper className={classes.paper}>
-                    <img className={classes.image} 
-                    alt="bon appetit" src="https://i.imgur.com/297AXe1.png"/>
-                    "https://i.imgur.com/vrGfOmV.png"
-                </Paper>
-            </Grid> */}
-
-            {/* <Grid item xs={4}>
-                <Paper className={classes.paper}>
-                    <img className={classes.image} 
-                    alt="fetch a date" 
-                    src="https://i.imgur.com/1HVBgZc.jpg"/>
-                    "https://i.imgur.com/LlYIgAe.jpg"
-                </Paper>
-            </Grid> */}
-
+            <Grid item xs={4}>
+              <ProjectCard/>
+            </Grid>
+            <Grid item xs={4}>
+              <ProjectCardOne/>
+            </Grid>
+            <Grid item xs={4}>
+              <ProjectCardTwo />
+            </Grid>
         </React.Fragment>
     );
     }
@@ -80,7 +45,6 @@ export default function ProjectsPage() {
           <FormRow />
         </Grid>
       </Grid>
-      {/* {true?<Paper className={classes.project}>SELECTED PROJECT</Paper>:null} */}
     </div>
 
   );

@@ -27,7 +27,7 @@ const ProjectCardOne = () => {
 
     return(
         <div>
-            <Grid item xs={4}>
+           
                 {!display.info
                     ?
                         <Paper className={classes.paper}>
@@ -47,7 +47,7 @@ const ProjectCardOne = () => {
                             {/* "https://i.imgur.com/vrGfOmV.png" */}
                         </Paper>
                     }
-            </Grid>
+        
         </div>
     )
 }

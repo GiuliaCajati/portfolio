@@ -4,12 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      marginLeft: '2%',
-      marginBottom: '2%',
-      fontSize: 80,
-    },
     paper: {
       padding: theme.spacing(1),
       textAlign: 'center',
@@ -33,7 +27,6 @@ const ProjectCardTwo = () => {
 
     return(
         <div>
-            <Grid item xs={4}>
             {!display.info
                 ?
                     <Paper className={classes.paper}>
@@ -44,7 +37,7 @@ const ProjectCardTwo = () => {
                         {/* "https://i.imgur.com/LlYIgAe.jpg" */}
                     </Paper>
                 :
-                    <Paper>
+                    <Paper className={classes.paper}>
                         <div onClick={toggleDisplay}>
                                 Project info
                                 Languages 
@@ -52,7 +45,6 @@ const ProjectCardTwo = () => {
                         </div>
                     </Paper>
             }
-            </Grid>
         </div>
     )
 }

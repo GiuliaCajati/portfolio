@@ -33,7 +33,6 @@ const ProjectCard = () => {
 
     return(
         <div>
-            <Grid item xs={4}>
                 {!display.info
                     ?
                         <Paper className={classes.paper}>
@@ -52,7 +51,6 @@ const ProjectCard = () => {
                             </div>
                         </Paper>
                     }
-            </Grid>
         </div>
     )
 }
