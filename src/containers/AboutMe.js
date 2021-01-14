@@ -8,7 +8,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
     container:{
-        backgroundColor: 'grey', 
+        backgroundColor: '#B0C4DE' , 
         height: '80vh',
     },
     logo:{
@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     },
     skills: {
         marginLeft: 800,
-        width: 300
+        width: 300,
+        marginTop: -350
     }
   });
 
@@ -71,13 +72,8 @@ const AboutMe = () => {
                 https://www.youtube.com/watch?v=lEANP6VmHL8
                 </Paper>
             
+    
                 
-
-
- 
-                "https://www.linkedin.com/in/giuliacajati/"
-                
-
                 </Container>  
             </Container>
         </React.Fragment>
