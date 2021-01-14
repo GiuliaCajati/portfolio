@@ -9,11 +9,14 @@ import ProjectCardTwo from '../components/ProjectCardTwo.js'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    height: '120vh',
     marginLeft: '2%',
     marginBottom: '2%',
   },
   title: {
     fontSize: 80,
+    marginTop:'2%',
+    marginBottom: '2%',
   },
 }));
 
@@ -39,7 +42,7 @@ export default function ProjectsPage() {
 
   return (
     <div className={classes.root}>
-        <b className={classes.title}>PROJECTS</b>
+        <div className={classes.title}>PROJECTS</div>
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <FormRow />
