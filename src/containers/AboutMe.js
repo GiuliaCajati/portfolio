@@ -31,23 +31,6 @@ const AboutMe = () => {
                 <Container maxWidth="xl" className={classes.container}>
                 <Container className={classes.about}>
                 <b className={classes.title}>ABOUT ME</b>
-                <Paper className={classes.skills}>
-                    Tools and Technologies:
-                    <List>
-                        <ListItem>Javascript</ListItem>
-                        <ListItem>SQL</ListItem>
-                        <ListItem>Redux</ListItem>
-                        <ListItem>React.js</ListItem>
-                        <ListItem>CSS</ListItem>
-                        <ListItem>HTML</ListItem>
-                        <ListItem>GitHub</ListItem>
-                        <ListItem>Material UI</ListItem>
-                    </List>
-                Graph with interests 
-                Link to Blog?
-                Link to Resume
-                </Paper>
-            
                 <List>
                     <ListItem >
                         <a href="https://github.com/GiuliaCajati">
@@ -67,6 +50,30 @@ const AboutMe = () => {
                         </a>
                     </ListItem>
                 </List>
+                <Paper className={classes.skills}>
+                    Tools and Technologies:
+                    <List>
+                        <ListItem>Javascript</ListItem>
+                        <ListItem>SQL</ListItem>
+                        <ListItem>Redux</ListItem>
+                        <ListItem>React.js</ListItem>
+                        <ListItem>CSS</ListItem>
+                        <ListItem>HTML</ListItem>
+                        <ListItem>GitHub</ListItem>
+                        <ListItem>Material UI</ListItem>
+                    </List>
+                Graph with interests 
+                Link to Blog?
+                Link to Resume
+                Funny videos youtube 
+                Graf about interests 
+                https://www.youtube.com/watch?v=pgi4BOWe7UM
+                https://www.youtube.com/watch?v=lEANP6VmHL8
+                </Paper>
+            
+                
+
+
  
                 "https://www.linkedin.com/in/giuliacajati/"
                 
