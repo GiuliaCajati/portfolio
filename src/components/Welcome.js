@@ -7,23 +7,38 @@ import Container from '@material-ui/core/Container';
 const useStyles = makeStyles({
     container:{
         backgroundColor: 'black', 
-        height: '200vh',
+        backgroundImage: `url(${"https://images.unsplash.com/photo-1577661395291-4dc2ad420b7c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"})`,
+        height: '100%',
         width: '100%',
     },
     titleContainer:{
-        fontSize: 80,
+        height: '5%',
         color: 'white',
+        paddingTop: 30
     },
-    text:{
-        fontSize: 30,
-        width: '25%',
-        marginLeft: '60%',
-        position: 'absolute',
-        color: 'white',
+    title:{
+        fontSize: 40, 
+    },
+    textImageContainer:{
+        height: '10%',
+        width: '100%',
+        marginTop: '10%',
+        display: 'flex',
     },
     image:{
-        
-    }
+        width: '45%',
+        display: 'flex',
+        paddingLeft: '10%',
+        paddingBottom: '10%'
+    },
+    text:{
+        color: 'white',
+        marginTop: '15%',
+        marginLeft: '10%',
+        maxfontSize: 30,
+        width:'30%'
+
+    },
   });
 
 const Welcome = () => {
@@ -38,15 +53,12 @@ const Welcome = () => {
     <React.Fragment>
         <Container maxWidth="xl" className={classes.container}>
                 <Container onMouseEnter={toggleHover} onMouseLeave={toggleHover} className={classes.titleContainer}>
-                {hover?<b>WELCOME TO GIULIA's PORTFOLIO</b>:<b>Ready to explore!</b>}
+                {hover?<b className={classes.title}>WELCOME TO GIULIA's PORTFOLIO</b>:<b className={classes.title}>Ready to explore!</b>}
                 </Container>
-
-                <img className={classes.image} src="https://i.imgur.com/sKK0feZ.png"/>  
-
-                <div className={classes.text}>
-                <h2>Hello World!</h2>
-                     I am a Full Stack Software Engineer based in Washington, DC.
-                </div>
+                    <div className={classes.textImageContainer}>
+                    <img className={classes.image} src="https://i.imgur.com/sKdTh8t.png"/>
+                        <div className={classes.text}>Hello World! I am a Full Stack Software Engineer based in Washington, DC.</div>
+                    </div>
         </Container>
         {/* <Container className={classes.image}>       
             </Container> */}

@@ -9,12 +9,11 @@ import ProjectCardTwo from '../components/ProjectCardTwo.js'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    height: '120vh',
     marginLeft: '2%',
     marginBottom: '2%',
   },
   title: {
-    fontSize: 80,
+    fontSize: '80%',
     marginTop:'2%',
     marginBottom: '2%',
   },

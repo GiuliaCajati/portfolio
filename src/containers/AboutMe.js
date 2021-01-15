@@ -15,10 +15,10 @@ const useStyles = makeStyles({
         height: 100
     },
     title:{
-        fontSize: 60
+        fontSize: '80%'
     },
     skills: {
-        marginLeft: 800,
+        //marginLeft: 800,
         width: 300,
         marginTop: -350
     }
