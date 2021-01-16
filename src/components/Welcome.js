@@ -26,7 +26,7 @@ const useStyles = makeStyles({
         display: 'flex',
     },
     image:{
-        width: '45%',
+        width: '40%',
         display: 'flex',
         paddingLeft: '10%',
         paddingBottom: '10%'
@@ -53,7 +53,7 @@ const Welcome = () => {
     <React.Fragment>
         <Container maxWidth="xl" className={classes.container}>
                 <Container onMouseEnter={toggleHover} onMouseLeave={toggleHover} className={classes.titleContainer}>
-                {hover?<b className={classes.title}>WELCOME TO GIULIA's PORTFOLIO</b>:<b className={classes.title}>Ready to explore!</b>}
+                {hover?<b className={classes.title}>GIULIA's PORTFOLIO</b>:<b className={classes.title}>Ready to explore!</b>}
                 </Container>
                     <div className={classes.textImageContainer}>
                     <img className={classes.image} src="https://i.imgur.com/sKdTh8t.png"/>

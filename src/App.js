@@ -8,8 +8,8 @@ import Welcome from './components/Welcome'
 function App() {
   return (
     <div className="App">
+      <NavBar/>
       <Welcome/>
-      {/* <NavBar/> */}
       <ProjectsPage/>
       <AboutMe/>
     </div>
