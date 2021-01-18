@@ -10,15 +10,16 @@ import ProjectCardFour from '../components/ProjectCardFour.js'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    marginLeft: '2%',
-    marginBottom: '2%',
+    backgroundColor:"#DDEAF0",
   },
   title: {
-    fontSize: '80%',
-    marginTop:'2%',
+    fontSize: '100%',
     marginBottom: '2%',
+    paddingTop: '2%'
   },
+  projects:{
+    padding:'1%'
+  }
 }));
 
 export default function ProjectsPage() {
@@ -50,7 +51,7 @@ export default function ProjectsPage() {
   return (
     <div className={classes.root}>
         <div className={classes.title}>PROJECTS</div>
-      <Grid container spacing={1}>
+      <Grid className={classes.projects}container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <FormRow />
         </Grid>

@@ -10,7 +10,8 @@ const useStyles = makeStyles({
   nav: {
     position:'fixed',
     width: '100%'
-  }
+  },
+
 })
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
       <div className={classes.nav}>
       <NavBar />
       </div>
+      <Welcome />
       
-      <Welcome/>
       <ProjectsPage/>
       <AboutMe/>
     </div>

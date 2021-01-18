@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
-//shapes moving aroundthe page 
-//onpage load 
-
-
 
 
 const useStyles = makeStyles({
@@ -18,7 +14,7 @@ const useStyles = makeStyles({
     titleContainer:{
         height: '5%',
         color: 'black',
-        paddingTop: 30
+        paddingTop: '5%'
     },
     title:{
         fontSize: 40, 
@@ -53,8 +49,6 @@ const useStyles = makeStyles({
     triangle:{
         position:"center",
         position:"fixed"
-        
-
     }
   });
 
