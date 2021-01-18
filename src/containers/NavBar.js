@@ -10,13 +10,15 @@ const useStyles = makeStyles({
     background: "black",
   },
   logo: {
-    color: "white"
+    color: "white",
+    marginRight: "45%"
+
   }
 });
 
 export default function NavBar() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -24,16 +26,16 @@ export default function NavBar() {
 
   return (
     <Paper className={classes.root}>
-      <div className={classes.logo}>Giulia Cajati Logo</div>
+      {/* <div className={classes.logo}>Giulia Cajati Logo</div> */}
   
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="secondary"
-        textColor="secondary"
+        indicatorColor="primary"
+        textColor="primary"
         centered
       >
-        
+        <Tab label="Giulia" className={classes.logo} />
         <Tab label="Welcome" />
         <Tab label="About Me" />
         <Tab label="Projects" />

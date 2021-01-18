@@ -4,6 +4,10 @@ import Container from '@material-ui/core/Container';
 
 //shapes moving aroundthe page 
 //onpage load 
+
+
+
+
 const useStyles = makeStyles({
     container:{
         backgroundColor: 'black', 
@@ -22,7 +26,7 @@ const useStyles = makeStyles({
     textImageContainer:{
         height: '10%',
         width: '100%',
-        marginTop: '10%',
+        marginTop: '5%',
         display: 'flex',
     },
     image:{
@@ -39,6 +43,9 @@ const useStyles = makeStyles({
         width:'30%'
 
     },
+    atam:{
+        height: 100
+    }
   });
 
 const Welcome = () => {
@@ -52,12 +59,17 @@ const Welcome = () => {
     return (
     <React.Fragment>
         <Container maxWidth="xl" className={classes.container}>
-                <Container onMouseEnter={toggleHover} onMouseLeave={toggleHover} className={classes.titleContainer}>
-                {hover?<b className={classes.title}>GIULIA's PORTFOLIO</b>:<b className={classes.title}>Ready to explore!</b>}
+                <Container 
+                onMouseEnter={toggleHover} 
+                onMouseLeave={toggleHover} 
+                className={classes.titleContainer}>
+                {hover?<b className={classes.title}>Giulia's Portfolio</b>:<b className={classes.title}>Ready to explore!</b>}
                 </Container>
                     <div className={classes.textImageContainer}>
+                    <img className={classes.atam} src="https://i.pinimg.com/originals/cf/ea/2f/cfea2f3d4d8a7d15947b1397fee3e720.gif" />
                     <img className={classes.image} src="https://i.imgur.com/sKdTh8t.png"/>
                         <div className={classes.text}>Hello World! I am a Full Stack Software Engineer based in Washington, DC.</div>
+                        
                     </div>
         </Container>
         {/* <Container className={classes.image}>       
