@@ -8,7 +8,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
     container:{
-        backgroundColor: '#B0C4DE' , 
+        backgroundColor: '#C7D8EB' , 
         height: '80vh',
     },
     logo:{

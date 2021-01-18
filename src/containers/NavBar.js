@@ -7,12 +7,13 @@ import Tab from '@material-ui/core/Tab';
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    background: "black",
+    background: "#E7E7E7",
+    color: "#252936", 
   },
   logo: {
-    color: "white",
-    marginRight: "45%"
-
+    color: "#252936",
+    marginRight: "35%",
+    height:50
   }
 });
 
@@ -31,14 +32,18 @@ export default function NavBar() {
       <Tabs
         value={value}
         onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
+        indicatorColor="secondary"
+        textColor="secondary"
         centered
       >
-        <Tab label="Giulia" className={classes.logo} />
-        <Tab label="Welcome" />
-        <Tab label="About Me" />
-        <Tab label="Projects" />
+
+        <img src="https://i.imgur.com/yu8lFsj.png"className={classes.logo} />
+        
+        <Tab className={classes.root} 
+        label="Welcome" />
+        <Tab className={classes.root} label="About Me" />
+        <Tab className={classes.root} 
+        label="Projects" />
       </Tabs>
     </Paper>
   );

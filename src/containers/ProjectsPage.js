@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid';
 import ProjectCard from '../components/ProjectCard.js'
 import ProjectCardOne from '../components/ProjectCardOne.js'
 import ProjectCardTwo from '../components/ProjectCardTwo.js'
+import ProjectCardThree from '../components/ProjectCardThree.js'
+import ProjectCardFour from '../components/ProjectCardFour.js'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,6 +36,12 @@ export default function ProjectsPage() {
             </Grid>
             <Grid item xs={4}>
               <ProjectCardTwo />
+            </Grid>
+            <Grid item xs={4}>
+              <ProjectCardThree />
+            </Grid>
+            <Grid item xs={4}>
+              <ProjectCardFour />
             </Grid>
         </React.Fragment>
     );

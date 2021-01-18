@@ -10,14 +10,14 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
     container:{
-        backgroundColor: 'black', 
-        backgroundImage: `url(${"https://images.unsplash.com/photo-1577661395291-4dc2ad420b7c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"})`,
+        backgroundColor: "#DFE4F0",
+        backgroundImage: `url(${""})`,
         height: '100%',
         width: '100%',
     },
     titleContainer:{
         height: '5%',
-        color: 'white',
+        color: 'black',
         paddingTop: 30
     },
     title:{
@@ -25,26 +25,36 @@ const useStyles = makeStyles({
     },
     textImageContainer:{
         height: '10%',
-        width: '100%',
-        marginTop: '5%',
+        width: '90%',
+        marginTop: '1%',
         display: 'flex',
+        color: 'black'
     },
     image:{
-        width: '40%',
+        width: '65%',
         display: 'flex',
         paddingLeft: '10%',
-        paddingBottom: '10%'
+        paddingBottom: '3%'
     },
     text:{
-        color: 'white',
+        color: 'black',
         marginTop: '15%',
-        marginLeft: '10%',
+        marginLeft: '5%',
         maxfontSize: 30,
         width:'30%'
-
     },
     atam:{
         height: 100
+    },
+    scroll:{
+        color: 'black',
+        paddingBottom:'5%'
+    },
+    triangle:{
+        position:"center",
+        position:"fixed"
+        
+
     }
   });
 
@@ -63,14 +73,20 @@ const Welcome = () => {
                 onMouseEnter={toggleHover} 
                 onMouseLeave={toggleHover} 
                 className={classes.titleContainer}>
-                {hover?<b className={classes.title}>Giulia's Portfolio</b>:<b className={classes.title}>Ready to explore!</b>}
+                {hover?<b className={classes.title}><img className={classes.atam} src="https://i.imgur.com/BA9MZN4.png" /></b>:<b className={classes.title}><img className={classes.atam} src="https://i.imgur.com/u6Fvt5p.png" /></b>}
                 </Container>
+                <img className={classes.triangle}src="https://i.imgur.com/KpHAana.png"/>
+
+                
                     <div className={classes.textImageContainer}>
-                    <img className={classes.atam} src="https://i.pinimg.com/originals/cf/ea/2f/cfea2f3d4d8a7d15947b1397fee3e720.gif" />
-                    <img className={classes.image} src="https://i.imgur.com/sKdTh8t.png"/>
+                    
+                    <img className={classes.image} src="https://i.imgur.com/wNRe3Yj.png"/>
                         <div className={classes.text}>Hello World! I am a Full Stack Software Engineer based in Washington, DC.</div>
-                        
                     </div>
+                    <div className={classes.scroll}>
+                        Scroll
+                    </div>
+                    
         </Container>
         {/* <Container className={classes.image}>       
             </Container> */}
