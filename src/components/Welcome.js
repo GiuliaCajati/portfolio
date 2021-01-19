@@ -11,29 +11,23 @@ const useStyles = makeStyles({
         backgroundImage: `url(${"https://i.imgur.com/gworN75.png"})`,
         backgroundSize: 'cover'
     },
+    textContainer:{
+        marginRight: '35%',
+        paddingTop:'10%',
+    },
     titleContainer:{
         height: '5%',
         paddingTop: '10%',
-       // position: 'absolute'
     },
     title:{
-        width: "40%",        
+        width: "40%",       
     },
-    textImageContainer:{
-        height: '10%',
-        width: '70%',
-        display: 'flex',
-        color: 'black'
+    imageContainer:{
+       // float:"right",
     },
     image:{
-        width: '65%',
-    },
-    text:{
-        color: 'black',
-        marginTop: '15%',
-        marginLeft: '5%',
-        maxfontSize: 30,
-        width:'30%',
+        marginLeft: '45%',
+        width: '50%',
     },
     scroll:{
         paddingTop: '2%',
@@ -58,7 +52,7 @@ const Welcome = () => {
     return (
     <React.Fragment >
         <Container maxWidth="xl" className={classes.container}>
-
+        <div className={classes.textContainer}>
         <Grow in={display}
         style={{ transformOrigin: '0 0 0' }}
         {...(display ? { timeout: 1000 } : {})}>
@@ -69,22 +63,24 @@ const Welcome = () => {
                     {hover?<img className={classes.title} src="https://i.imgur.com/BA9MZN4.png" />:<img className={classes.title} src="https://i.imgur.com/u6Fvt5p.png" />}
                     </Container>
         </Grow>
-        
-                    <div className={classes.textImageContainer}>
-                    <Grow in={display}
-                    style={{ transformOrigin: '0 0 0' }}
-                    {...(display ? { timeout: 2000 } : {})}>
-                        <img className={classes.image} src="https://i.imgur.com/wNRe3Yj.png"/>
-                    </Grow>
 
-                    <Grow in={display}
+        <Grow in={display}
                     style={{ transformOrigin: '0 0 0' }}
                     {...(display ? { timeout: 2000 } : {})}>
                         <div className={classes.text}>
                             Hello World! I am a Full Stack Software Engineer based in Washington, DC.
                         </div>
-                    </Grow>
-                    
+        </Grow>
+        </div>
+        
+                    <div className={classes.imageContainer}>
+                        <Grow in={display}
+                        style={{ transformOrigin: '0 0 0' }}
+                        {...(display ? { timeout: 2000 } : {})}>
+                            <img className={classes.image} src="https://i.imgur.com/OduKHHO.png"/>
+                            
+                        </Grow>
+                    {/* https://i.imgur.com/b5xHqBO.png */}
                     </div>
                    
 
