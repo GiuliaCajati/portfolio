@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -7,6 +7,7 @@ import ProjectCardOne from '../components/ProjectCardOne.js'
 import ProjectCardTwo from '../components/ProjectCardTwo.js'
 import ProjectCardThree from '../components/ProjectCardThree.js'
 import ProjectCardFour from '../components/ProjectCardFour.js'
+import Grow from '@material-ui/core/Grow';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,6 +26,12 @@ const useStyles = makeStyles((theme) => ({
 export default function ProjectsPage() {
   const classes = useStyles();
   const [project, setProject] = useState("")
+  const [display, setDisplay] = useState(false);
+  // on scroll
+  useEffect(() => {
+    setDisplay(!display)
+}, [])
+
 
   function FormRow() {
     return (
@@ -50,7 +57,11 @@ export default function ProjectsPage() {
 
   return (
     <div className={classes.root}>
+      <Grow in={display}
+        style={{ transformOrigin: '0 0 0' }}
+        {...(display ? { timeout: 1000 } : {})}>
         <img className={classes.title} src="https://i.imgur.com/Pwy7aOm.png"/>
+        </Grow>
       <Grid className={classes.projects}container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <FormRow />

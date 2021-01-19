@@ -27,6 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <div>
       <Grow in={display}
         style={{ transformOrigin: '0 0 0' }}
         {...(display ? { timeout: 1000 } : {})}>
@@ -37,6 +38,7 @@ const App = () => {
       <Welcome />
       <ProjectsPage/>
       <AboutMe/>
+      </div>
 
 
       {/* <Switch>
@@ -44,6 +46,9 @@ const App = () => {
       <Route exact path="/welcome" component={Welcome} />
       <Route exact path="/projects" component={ProjectsPage} />
       <Route exact path="/about" component={AboutMe} />
+      <Route exact path='/about' render={()=> {
+        return <AboutMe />
+      }} />
       </Switch> */}
     </div>
   );

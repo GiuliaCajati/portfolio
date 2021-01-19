@@ -33,11 +33,11 @@ const useStyles = makeStyles({
         marginTop: '15%',
         marginLeft: '5%',
         maxfontSize: 30,
-        width:'30%'
+        width:'30%',
     },
     scroll:{
-        color: 'black',
-        paddingBottom:'5%'
+        paddingTop: '2%',
+        width: '8%',
     },
   });
 
@@ -86,14 +86,18 @@ const Welcome = () => {
                     </Grow>
                     
                     </div>
+                   
 
                     <Grow in={display}
                     style={{ transformOrigin: '0 0 0' }}
                     {...(display ? { timeout: 2000 } : {})}>
-                        <div className={classes.scroll}>
-                            Scroll
-                        </div>
+                        <img className={classes.scroll}
+                        src="https://airxus.com/wp-content/uploads/2019/07/scroll-down-arrow.gif"
+                        />
+                        
+
                     </Grow>
+                    
             
                     
         </Container>
