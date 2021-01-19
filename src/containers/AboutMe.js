@@ -15,7 +15,8 @@ const useStyles = makeStyles({
         height: 100
     },
     title:{
-        fontSize: '80%'
+        padding: '3%',
+        width: '25%'
     },
     skills: {
         //marginLeft: 800,
@@ -31,7 +32,7 @@ const AboutMe = () => {
             <CssBaseline />
                 <Container maxWidth="xl" className={classes.container}>
                 <Container className={classes.about}>
-                <b className={classes.title}>ABOUT ME</b>
+                <img className={classes.title} src="https://i.imgur.com/BzNz63a.png"/>
                 <List>
                     <ListItem >
                         <a href="https://github.com/GiuliaCajati">

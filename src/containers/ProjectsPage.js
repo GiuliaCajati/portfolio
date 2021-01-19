@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:"#DDEAF0",
   },
   title: {
-    fontSize: '100%',
     marginBottom: '2%',
-    paddingTop: '2%'
+    paddingTop: '2%',
+    width: "15%", 
   },
   projects:{
     padding:'1%'
@@ -50,7 +50,7 @@ export default function ProjectsPage() {
 
   return (
     <div className={classes.root}>
-        <div className={classes.title}>PROJECTS</div>
+        <img className={classes.title} src="https://i.imgur.com/Pwy7aOm.png"/>
       <Grid className={classes.projects}container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <FormRow />

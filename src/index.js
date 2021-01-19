@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider } from '@material-ui/core/styles'
 import { createMuiTheme } from '@material-ui/core/styles';
+import { BrowserRouter } from 'react-router-dom';//withRouter
 
 const theme = createMuiTheme({
   palette: {
@@ -22,11 +23,11 @@ const theme = createMuiTheme({
 });
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <ThemeProvider theme={theme}>
         <App />
       </ThemeProvider>
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

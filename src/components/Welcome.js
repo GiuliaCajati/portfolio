@@ -1,36 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Grow from '@material-ui/core/Grow';
+
 
 
 
 const useStyles = makeStyles({
     container:{
-        backgroundColor: "#DFE4F0",
-        backgroundImage: `url(${""})`,
-        height: '100%',
-        width: '100%',
+        backgroundImage: `url(${"https://i.imgur.com/gworN75.png"})`,
+        backgroundSize: 'cover'
     },
     titleContainer:{
         height: '5%',
-        color: 'black',
-        paddingTop: '5%'
+        paddingTop: '10%',
+       // position: 'absolute'
     },
     title:{
-        fontSize: 40, 
+        width: "40%",        
     },
     textImageContainer:{
         height: '10%',
-        width: '90%',
-        marginTop: '1%',
+        width: '70%',
         display: 'flex',
         color: 'black'
     },
     image:{
         width: '65%',
-        display: 'flex',
-        paddingLeft: '10%',
-        paddingBottom: '3%'
     },
     text:{
         color: 'black',
@@ -39,51 +35,69 @@ const useStyles = makeStyles({
         maxfontSize: 30,
         width:'30%'
     },
-    atam:{
-        height: 100
-    },
     scroll:{
         color: 'black',
         paddingBottom:'5%'
     },
-    triangle:{
-        position:"center",
-        position:"fixed"
-    }
   });
 
 const Welcome = () => {
     const classes = useStyles();
     const [hover, setHover] = useState(true)
+    const [display, setDisplay] = useState(false);
+
+    useEffect(() => {
+        setDisplay(!display)
+    }, [])
 
     const toggleHover = () => {
         setHover(!hover)
     }
 
-    return (
-    <React.Fragment>
-        <Container maxWidth="xl" className={classes.container}>
-                <Container 
-                onMouseEnter={toggleHover} 
-                onMouseLeave={toggleHover} 
-                className={classes.titleContainer}>
-                {hover?<b className={classes.title}><img className={classes.atam} src="https://i.imgur.com/BA9MZN4.png" /></b>:<b className={classes.title}><img className={classes.atam} src="https://i.imgur.com/u6Fvt5p.png" /></b>}
-                </Container>
-                <img className={classes.triangle}src="https://i.imgur.com/KpHAana.png"/>
 
-                
+    return (
+    <React.Fragment >
+        <Container maxWidth="xl" className={classes.container}>
+
+        <Grow in={display}
+        style={{ transformOrigin: '0 0 0' }}
+        {...(display ? { timeout: 1000 } : {})}>
+                    <Container 
+                    onMouseEnter={toggleHover} 
+                    onMouseLeave={toggleHover} 
+                    className={classes.titleContainer}>
+                    {hover?<img className={classes.title} src="https://i.imgur.com/BA9MZN4.png" />:<img className={classes.title} src="https://i.imgur.com/u6Fvt5p.png" />}
+                    </Container>
+        </Grow>
+        
                     <div className={classes.textImageContainer}>
+                    <Grow in={display}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(display ? { timeout: 2000 } : {})}>
+                        <img className={classes.image} src="https://i.imgur.com/wNRe3Yj.png"/>
+                    </Grow>
+
+                    <Grow in={display}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(display ? { timeout: 2000 } : {})}>
+                        <div className={classes.text}>
+                            Hello World! I am a Full Stack Software Engineer based in Washington, DC.
+                        </div>
+                    </Grow>
                     
-                    <img className={classes.image} src="https://i.imgur.com/wNRe3Yj.png"/>
-                        <div className={classes.text}>Hello World! I am a Full Stack Software Engineer based in Washington, DC.</div>
                     </div>
-                    <div className={classes.scroll}>
-                        Scroll
-                    </div>
+
+                    <Grow in={display}
+                    style={{ transformOrigin: '0 0 0' }}
+                    {...(display ? { timeout: 2000 } : {})}>
+                        <div className={classes.scroll}>
+                            Scroll
+                        </div>
+                    </Grow>
+            
                     
         </Container>
-        {/* <Container className={classes.image}>       
-            </Container> */}
+
     </React.Fragment>
     )
 }
