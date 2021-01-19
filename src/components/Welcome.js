@@ -9,28 +9,26 @@ import Grow from '@material-ui/core/Grow';
 const useStyles = makeStyles({
     container:{
         backgroundImage: `url(${"https://i.imgur.com/gworN75.png"})`,
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
     },
     textContainer:{
-        marginRight: '35%',
-        paddingTop:'10%',
+        width: "30%",
+        marginLeft: '10%',
+        paddingTop:'17%'
     },
     titleContainer:{
-        height: '5%',
-        paddingTop: '10%',
     },
     title:{
-        width: "40%",       
+        width: "100%",      
     },
-    imageContainer:{
-       // float:"right",
+    photoContainer:{
+       // float:"right", 
+       marginTop:'-15%'
     },
-    image:{
-        marginLeft: '45%',
-        width: '50%',
+    photo:{
+        marginLeft: '30%',
     },
     scroll:{
-        paddingTop: '2%',
         width: '8%',
     },
   });
@@ -52,50 +50,47 @@ const Welcome = () => {
     return (
     <React.Fragment >
         <Container maxWidth="xl" className={classes.container}>
-        <div className={classes.textContainer}>
-        <Grow in={display}
-        style={{ transformOrigin: '0 0 0' }}
-        {...(display ? { timeout: 1000 } : {})}>
-                    <Container 
-                    onMouseEnter={toggleHover} 
-                    onMouseLeave={toggleHover} 
-                    className={classes.titleContainer}>
-                    {hover?<img className={classes.title} src="https://i.imgur.com/BA9MZN4.png" />:<img className={classes.title} src="https://i.imgur.com/u6Fvt5p.png" />}
-                    </Container>
-        </Grow>
+            <div className={classes.textContainer}>
+                <Grow in={display}
+                style={{ transformOrigin: '0 0 0' }}
+                {...(display ? { timeout: 1000 } : {})}>
+                        <Container 
+                        onMouseEnter={toggleHover} 
+                        onMouseLeave={toggleHover} 
+                        className={classes.titleContainer}>
+                            {hover
+                                ?
+                            <img className={classes.title} src="https://i.imgur.com/BA9MZN4.png" />
+                                :
+                            <img className={classes.title} src="https://i.imgur.com/u6Fvt5p.png" />}
+                        </Container>
+                </Grow>
 
-        <Grow in={display}
-                    style={{ transformOrigin: '0 0 0' }}
-                    {...(display ? { timeout: 2000 } : {})}>
-                        <div className={classes.text}>
-                            Hello World! I am a Full Stack Software Engineer based in Washington, DC.
-                        </div>
-        </Grow>
-        </div>
-        
-                    <div className={classes.imageContainer}>
-                        <Grow in={display}
-                        style={{ transformOrigin: '0 0 0' }}
-                        {...(display ? { timeout: 2000 } : {})}>
-                            <img className={classes.image} src="https://i.imgur.com/OduKHHO.png"/>
-                            
-                        </Grow>
-                    {/* https://i.imgur.com/b5xHqBO.png */}
+                <Grow in={display}
+                style={{ transformOrigin: '0 0 0' }}
+                {...(display ? { timeout: 2000 } : {})}>
+                    <div className={classes.text}>
+                        Hello World! I am a Full Stack Software Engineer based in Washington, DC.
                     </div>
+                </Grow>
+            </div>
+        
+            <div className={classes.photoContainer}>
+                <Grow in={display}
+                style={{ transformOrigin: '0 0 0' }}
+                {...(display ? { timeout: 2000 } : {})}>
+                    <img className={classes.photo} 
+                    src="https://i.imgur.com/EVONk0u.png"/> 
+                </Grow>
+            {/* https://i.imgur.com/b5xHqBO.png */}
+            </div>
                    
-
-                    <Grow in={display}
-                    style={{ transformOrigin: '0 0 0' }}
-                    {...(display ? { timeout: 2000 } : {})}>
-                        <img className={classes.scroll}
-                        src="https://airxus.com/wp-content/uploads/2019/07/scroll-down-arrow.gif"
-                        />
-                        
-
-                    </Grow>
-                    
-            
-                    
+            <Grow in={display}
+            style={{ transformOrigin: '0 0 0' }}
+            {...(display ? { timeout: 2000 } : {})}>
+                <img className={classes.scroll}
+                src="https://airxus.com/wp-content/uploads/2019/07/scroll-down-arrow.gif"/>
+            </Grow>   
         </Container>
 
     </React.Fragment>
