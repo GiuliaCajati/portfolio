@@ -14,13 +14,14 @@ const useStyles = makeStyles({
         height: '100%',
     },
     logos:{
-        width: '20%', 
+        width: '90%', 
     },
     logo:{
-        height: 100
+        height: 100,
+        marginLeft:'10%'
     },
     title:{
-        padding: '5%',
+        paddingTop: '5%',
         width: '25%'
     },
     paper: {
@@ -32,10 +33,12 @@ const useStyles = makeStyles({
         padding: '2%',
     },
     paperContainer:{
-        marginTop:'-35%',
-        paddingLeft: '30%',
+       // paddingLeft: '30%',
         paddingBottom:'5%'
     },
+    button:{
+        padding: '2%'
+    }
   
   });
 
@@ -48,38 +51,22 @@ const AboutMe = () => {
                 <Container className={classes.about}>
                 <img className={classes.title} src="https://i.imgur.com/BzNz63a.png"/>
                 <div className={classes.logos} >
-                <List>
-                    <ListItem >
-                        <Button variant="contained" color="primary" component="span">
-                        <a target='_blank' href="https://drive.google.com/file/d/1JnTIKhVeisLTpNKVN4_DnI7hhdg2tNFB/view?usp=sharing">Resume</a>
-                        </Button>
-                    </ListItem>
-                    <ListItem >
+                   
                         <a target='_blank' href="https://github.com/GiuliaCajati">
-                            
-                            <img className={classes.logo} 
-
-                           
+                            <img className={classes.logo}  
                             src="https://i.imgur.com/ya0lvus.png" 
                             alt="github"/>
                         </a>
-                    </ListItem>
-                    <ListItem>
                         <a target='_blank' href="https://www.linkedin.com/in/giuliacajati/">
                             <img className={classes.logo} 
                             src="https://i.imgur.com/HymmnzB.png" 
                             alt="linkedin"/>
                         </a>
-                    </ListItem>
-                    <ListItem>
                         <a target='_blank' href="https://giuliacajati.medium.com/">
                             <img className={classes.logo} 
                             src="https://i.imgur.com/0SETXjc.png" 
                             alt="medium"/>
                         </a>
-                    </ListItem>
-    
-                </List>
                 </div>
 
                 
@@ -98,6 +85,12 @@ const AboutMe = () => {
                     Experienced in Ruby on Rails and JavaScript based programming along with and a background in business and hotel management. Possess strong skills in  team-building and project management that help fast growing companies achieve positive results. 
                     </div>
                     </div>
+                    <div className={classes.button}>
+                        <Button variant="contained" color="primary" component="span">
+                            <a target='_blank' href="https://drive.google.com/file/d/1JnTIKhVeisLTpNKVN4_DnI7hhdg2tNFB/view?usp=sharing">Resume</a>
+                        </Button>
+                    </div>
+                    
                     
                     
                 </Paper>
