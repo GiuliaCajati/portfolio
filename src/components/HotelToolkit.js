@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const ProjectCard = () => {
+const HotelToolkit = () => {
     const classes = useStyles();
     const [display, setDisplay] = useState({info: false})
 
@@ -47,11 +47,21 @@ const ProjectCard = () => {
                         <Paper className={classes.paper}>
                             <div onClick={toggleDisplay}>
                                 <List>
-                                    <ListItem><b>Overview</b></ListItem>
-                                    <ListItem><b>Languages Used:</b></ListItem>
-                                    <ListItem><b>Link:</b></ListItem>
-                                    <ListItem><b>GitHub:</b></ListItem>
-                                    <ListItem><b>Demo:</b></ListItem>
+                                    <ListItem><i><b>Overview: </b> A platform that facilitates communication among hotel managers, and team members.</i></ListItem>
+                                    <ListItem>
+                                        <i>
+                                            <b>Languages Used:</b>React.js, Redux
+                                        </i>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://www.youtube.com/watch?v=Gy8Cx-dpiUM">Demo Video</a>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://giuliacajati.github.io/hotel-toolkit-front-end-/">Click here to check it out!</a>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://github.com/GiuliaCajati/hotel-toolkit-front-end-">GitHub</a>
+                                    </ListItem>
                                 </List>
                             </div>
                         </Paper>
@@ -60,4 +70,4 @@ const ProjectCard = () => {
     )
 }
 
-export default ProjectCard
+export default HotelToolkit

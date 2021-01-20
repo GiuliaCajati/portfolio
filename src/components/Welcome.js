@@ -17,9 +17,13 @@ const useStyles = makeStyles({
         paddingTop:'17%'
     },
     titleContainer:{
+        width: "100%",
     },
     title:{
         width: "100%",      
+    },
+    text:{
+        width: "100%"
     },
     photoContainer:{
        // float:"right", 
@@ -27,6 +31,7 @@ const useStyles = makeStyles({
     },
     photo:{
         marginLeft: '30%',
+        width: '35%'
     },
     scroll:{
         width: '8%',

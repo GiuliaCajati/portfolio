@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-  const ProjectCardThree = () =>{
+  const Predigital = () =>{
       const classes = useStyles();
       const [display, setDisplay] = useState({info: false})
 
@@ -47,11 +47,19 @@ const useStyles = makeStyles((theme) => ({
                         <Paper className={classes.paper}>
                             <div onClick={toggleDisplay}>
                                 <List>
-                                    <ListItem><b>Overview</b></ListItem>
-                                    <ListItem><b>Languages Used:</b></ListItem>
-                                    <ListItem><b>Link: https://giuliacajati.github.io/Predigital/index.html</b></ListItem>
-                                    <ListItem><b>GitHub:</b></ListItem>
-                                    <ListItem><b>Demo:</b></ListItem>
+                                    <ListItem><i><b>Overview: </b> A portfolio of scanned family photos, dating back to the late 1800's.</i></ListItem>
+                                    <ListItem>
+                                        <i>
+                                        <b>Built With:</b>Javascript, HTML, and CSS
+                                        </i>
+                                    </ListItem>
+                
+                                    <ListItem>
+                                        <a target='_blank' href="https://giuliacajati.github.io/Predigital/">Click here to check it out!</a>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://github.com/GiuliaCajati/Predigital">GitHub</a>
+                                    </ListItem>
                                 </List>
                             </div>
                         </Paper>
@@ -60,5 +68,5 @@ const useStyles = makeStyles((theme) => ({
     )
 }
 
-export default ProjectCardThree
+export default Predigital
 

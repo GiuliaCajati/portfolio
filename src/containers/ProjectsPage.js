@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import ProjectCard from '../components/ProjectCard.js'
-import ProjectCardOne from '../components/ProjectCardOne.js'
-import ProjectCardTwo from '../components/ProjectCardTwo.js'
-import ProjectCardThree from '../components/ProjectCardThree.js'
-import ProjectCardFour from '../components/ProjectCardFour.js'
+import HotelToolkit from '../components/HotelToolkit.js'
+import BonAppetit from '../components/BonAppetit.js'
+import FetchAdate from '../components/FetchAdate.js'
+import Predigital from '../components/Predigital.js'
+import MovieMatcher from '../components/MovieMatcher.js'
 import Grow from '@material-ui/core/Grow';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,19 +37,19 @@ export default function ProjectsPage() {
     return (
         <React.Fragment>
             <Grid item xs={4}>
-              <ProjectCard/>
+              <HotelToolkit />
             </Grid>
             <Grid item xs={4}>
-              <ProjectCardOne/>
+              <BonAppetit />
             </Grid>
             <Grid item xs={4}>
-              <ProjectCardTwo />
+              <FetchAdate />
             </Grid>
             <Grid item xs={4}>
-              <ProjectCardThree />
+              <Predigital />
             </Grid>
             <Grid item xs={4}>
-              <ProjectCardFour />
+              <MovieMatcher />
             </Grid>
         </React.Fragment>
     );

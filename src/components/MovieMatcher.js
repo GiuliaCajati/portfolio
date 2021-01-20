@@ -24,43 +24,48 @@ const useStyles = makeStyles((theme) => ({
       },
 }))
 
-const ProjectCardFour = () =>{
+const MovieMatcher = () =>{
     const classes = useStyles();
     const [display, setDisplay] = useState({info: false})
 
     const toggleDisplay = () =>{
         setDisplay({info: !display.info})
     }
+    
 
     return(
-
         <div>
                 {!display.info
                     ?
                         <Paper className={classes.paper}>
-                            <img className={classes.image}
-                            onclick={toggleDisplay}
-                            alt="movie matcher"
-                            src="https://i.imgur.com/T7VoT0g.png"
-                            />
+                            <img className={classes.image} 
+                            onClick={toggleDisplay}
+                            alt="pre digital" 
+                            src="https://i.imgur.com/T7VoT0g.png"/>
+                            {/* "https://i.imgur.com/cBy9Pa2.png" */}
                         </Paper>
                     :
                         <Paper className={classes.paper}>
                             <div onClick={toggleDisplay}>
                                 <List>
-                                    <ListItem><b>Overview</b></ListItem>
-                                    <ListItem><b>Languages Used:</b></ListItem>
-                                    <ListItem><b>Link: https://giuliacajati.github.io/Predigital/index.html</b></ListItem>
-                                    <ListItem><b>GitHub:</b></ListItem>
-                                    <ListItem><b>Demo:</b></ListItem>
+                                    <ListItem><i><b>Overview: </b> Application where you can select your favorite films, and see the 10 people with lists most similiar to yours.</i></ListItem>
+                                    <ListItem>
+                                        <i>
+                                        <b>Built With:</b>Ruby
+                                        </i>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://www.youtube.com/watch?v=Gy8Cx-dpiUM">Demo Video</a>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://github.com/GiuliaCajati/movie-matcher">GitHub</a>
+                                    </ListItem>
                                 </List>
                             </div>
                         </Paper>
-             }
+                    }
         </div>
     )
-
-
 }
 
-export default ProjectCardFour
+export default MovieMatcher

@@ -16,9 +16,15 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: '100%',
       maxHeight: '100%',
     },
+    appinfo:{
+        margin: 'auto',
+        display: 'block',
+        maxWidth: '100%',
+        maxHeight: '100%',
+    }
   }));
 
-const ProjectCardOne = () => {
+const BonAppetit = () => {
     const classes = useStyles();
     const [display, setDisplay] = useState({info: false})
 
@@ -40,13 +46,25 @@ const ProjectCardOne = () => {
                         </Paper>
                     :
                         <Paper className={classes.paper}>
-                            <div onClick={toggleDisplay}>
+                            <div onClick={toggleDisplay} 
+                            className={classes.appinfo} >
+                                
                                 <List>
-                                    <ListItem><b>Overview</b></ListItem>
-                                    <ListItem><b>Languages Used:</b></ListItem>
-                                    <ListItem><b>Link:</b></ListItem>
-                                    <ListItem><b>GitHub:</b></ListItem>
-                                    <ListItem><b>Demo:</b></ListItem>
+                                    <ListItem><i><b>Overview: </b> An interactive application, where users can share, view photos, and recipes.</i></ListItem>
+                                    <ListItem>
+                                        <i>
+                                            <b>Built With:</b>React.js
+                                        </i>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://youtu.be/0c53Z6IDOkQ">Demo Video</a>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://navpoint1.github.io/FetchADate/">Click here to check it out!</a>
+                                    </ListItem>
+                                    <ListItem>
+                                        <a target='_blank' href="https://github.com/GiuliaCajati/fetch-a-date-back-end">GitHub</a>
+                                    </ListItem>
                                 </List>
                             </div>
                             {/* "https://i.imgur.com/vrGfOmV.png" */}
@@ -57,4 +75,4 @@ const ProjectCardOne = () => {
     )
 }
 
-export default ProjectCardOne
+export default BonAppetit
