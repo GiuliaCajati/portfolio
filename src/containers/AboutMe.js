@@ -8,7 +8,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
     container:{
-        backgroundColor: '#C7D8EB' , 
+        backgroundColor: '#A4C3D2' , 
         height: '80vh',
     },
     logo:{
@@ -19,8 +19,8 @@ const useStyles = makeStyles({
         width: '25%'
     },
     skills: {
-        //marginLeft: 800,
-        width: 300,
+        marginLeft: '50%',
+        width: '50%',
         marginTop: -350
     }
   });
@@ -35,46 +35,45 @@ const AboutMe = () => {
                 <img className={classes.title} src="https://i.imgur.com/BzNz63a.png"/>
                 <List>
                     <ListItem >
-                        <a href="https://github.com/GiuliaCajati">
+                        <a target='_blank' href="https://github.com/GiuliaCajati">
                             <img className={classes.logo} 
                             src="https://i.imgur.com/ya0lvus.png" 
                             alt="github"/>
                         </a>
                     </ListItem>
                     <ListItem>
-                        <a href="https://www.linkedin.com/in/giuliacajati/">
-                            <img className={classes.logo} src="https://i.imgur.com/HymmnzB.png" alt="linkedin"/>
+                        <a target='_blank' href="https://www.linkedin.com/in/giuliacajati/">
+                            <img className={classes.logo} 
+                            src="https://i.imgur.com/HymmnzB.png" 
+                            alt="linkedin"/>
                         </a>
                     </ListItem>
                     <ListItem>
-                        <a href="https://giuliacajati.medium.com/">
-                            <img className={classes.logo} src="https://i.imgur.com/0SETXjc.png" alt="medium"/>
+                        <a target='_blank' href="https://giuliacajati.medium.com/">
+                            <img className={classes.logo} 
+                            src="https://i.imgur.com/0SETXjc.png" 
+                            alt="medium"/>
                         </a>
                     </ListItem>
+
+                    <a target='_blank' href="https://drive.google.com/file/d/1agUP2l4g_bFiRONHtdoL37isMDSq43Lk/view">Resume</a>
                 </List>
                 <Paper className={classes.skills}>
-                    Tools and Technologies:
-                    <List>
-                        <ListItem>Javascript</ListItem>
-                        <ListItem>SQL</ListItem>
-                        <ListItem>Redux</ListItem>
-                        <ListItem>React.js</ListItem>
-                        <ListItem>CSS</ListItem>
-                        <ListItem>HTML</ListItem>
-                        <ListItem>GitHub</ListItem>
-                        <ListItem>Material UI</ListItem>
-                    </List>
-                Graph with interests 
+                    <b>Skills:</b>
+                    
+                    <div>
+                    Experienced in Ruby on Rails and JavaScript based programming along with and a background in business and hotel management. Possess strong skills in  team-building and project management that help fast growing companies achieve positive results. 
+                    </div>
+                    
+                    
+                </Paper>
+
+                {/* Graph with interests 
                 Link to Blog?
-                Link to Resume
                 Funny videos youtube 
                 Graf about interests 
                 https://www.youtube.com/watch?v=pgi4BOWe7UM
-                https://www.youtube.com/watch?v=lEANP6VmHL8
-                </Paper>
-            
-    
-                
+                https://www.youtube.com/watch?v=lEANP6VmHL8 */}
                 </Container>  
             </Container>
         </React.Fragment>

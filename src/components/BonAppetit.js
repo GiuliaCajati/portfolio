@@ -57,13 +57,13 @@ const BonAppetit = () => {
                                         </i>
                                     </ListItem>
                                     <ListItem>
-                                        <a target='_blank' href="https://youtu.be/0c53Z6IDOkQ">Demo Video</a>
+                                        <a target='_blank' href="https://www.youtube.com/watch?v=IKpoDlZfW1A">Demo Video</a>
                                     </ListItem>
                                     <ListItem>
-                                        <a target='_blank' href="https://navpoint1.github.io/FetchADate/">Click here to check it out!</a>
+                                        <a target='_blank' href="https://giuliacajati.github.io/bon-appetit-front-end/">Click here to check it out!</a>
                                     </ListItem>
                                     <ListItem>
-                                        <a target='_blank' href="https://github.com/GiuliaCajati/fetch-a-date-back-end">GitHub</a>
+                                        <a target='_blank' href="https://github.com/GiuliaCajati/bon-appetit-front-end">GitHub</a>
                                     </ListItem>
                                 </List>
                             </div>
