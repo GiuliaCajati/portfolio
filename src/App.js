@@ -26,13 +26,14 @@ const App = () => {
   useEffect(() =>{
     setDisplay(!display)
   }, [])
-  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop) 
+  const scrollToRef = (ref) => window.scrollTo( {top: ref.current.offsetTop, behavior: 'smooth'
+  }) 
   const projectsRef = useRef(null)
   const welcomeRef = useRef(null)
   const aboutMeRef = useRef(null)
 
   const executeScroll = (targetID) => {
-    scroll.scrollToRef(projectsRef)
+    scrollToRef(projectsRef)
   }
 
 

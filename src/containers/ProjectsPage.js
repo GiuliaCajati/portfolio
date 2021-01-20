@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     marginBottom: '2%',
-    paddingTop: '2%',
+    paddingTop: '5%',
     width: "15%", 
   },
   projects:{
