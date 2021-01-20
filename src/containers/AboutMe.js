@@ -51,7 +51,7 @@ const AboutMe = () => {
                 <List>
                     <ListItem >
                         <Button variant="contained" color="primary" component="span">
-                        <a target='_blank' href="https://drive.google.com/file/d/1agUP2l4g_bFiRONHtdoL37isMDSq43Lk/view">Resume</a>
+                        <a target='_blank' href="https://drive.google.com/file/d/1JnTIKhVeisLTpNKVN4_DnI7hhdg2tNFB/view?usp=sharing">Resume</a>
                         </Button>
                     </ListItem>
                     <ListItem >
