@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function ProjectsPage() {
+export default function ProjectsPage(props) {
   const classes = useStyles();
   const [project, setProject] = useState("")
   const [display, setDisplay] = useState(false);
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
     }
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} ref={props.projectsRef}>
       <Grow in={display}
         style={{ transformOrigin: '0 0 0' }}
         {...(display ? { timeout: 1000 } : {})}>

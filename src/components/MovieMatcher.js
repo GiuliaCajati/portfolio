@@ -55,7 +55,7 @@ const MovieMatcher = () =>{
                                         </i>
                                     </ListItem>
                                     <ListItem>
-                                        <a target='_blank' href="https://www.youtube.com/watch?v=Gy8Cx-dpiUM">Demo Video</a>
+                                        <a target='_blank' href="https://youtu.be/U-QX_IPsScU">Demo Video</a>
                                     </ListItem>
                                     <ListItem>
                                         <a target='_blank' href="https://github.com/GiuliaCajati/movie-matcher">GitHub</a>
