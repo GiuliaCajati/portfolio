@@ -81,8 +81,23 @@ const AboutMe = () => {
 
                     After five amazing years in the industry, I became fascinated with the overwhelming influence technology has had on our everyday life. This led me to take a big leap, and begin my software engineering studies at the Flatiron School. This has been an incredibly fulfilling decision. It has been astonishing how quickly time goes by when building incredible projects, and learning new skills. I look forward to seeing what impact I can make through my work. 
                     </div>
-                    <div><h2>Skills:</h2>
-                    Experienced in Ruby on Rails and JavaScript based programming along with and a background in business and hotel management. Possess strong skills in  team-building and project management that help fast growing companies achieve positive results. 
+                    <div><h2>Technologies I've been working with recently:</h2>
+                    <List>
+                        <ListItem>
+                        React.js
+                        </ListItem>
+                        <ListItem>
+                        JavaScript (ES6+)
+                        </ListItem>
+                        <ListItem>
+                        Ruby on Rails
+                        </ListItem>
+                        <ListItem>
+                        HTML and CSS
+                        </ListItem>
+                    </List>
+                    
+                   
                     </div>
                     </div>
                     <div className={classes.button}>
