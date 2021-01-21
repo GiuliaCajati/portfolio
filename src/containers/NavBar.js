@@ -17,6 +17,7 @@ const useStyles = makeStyles({
     color: "#252936",
     marginRight: "30%",
     width:"4%",
+    height:'1%',
     margin:'0.3%'
   }
 });

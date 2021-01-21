@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     width: "15%", 
   },
   projects:{
-    padding:'1%'
+    padding:'1%',
+    paddingBottom:'10%'
   }
 }));
 
@@ -37,19 +38,19 @@ export default function ProjectsPage(props) {
   function FormRow() {
     return (
         <React.Fragment>
-            <Grid item xs={4}>
+            <Grid item lg={4}>
               <HotelToolkit />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item lg={4}>
               <BonAppetit />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item lg={4}>
               <FetchAdate />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item lg={4}>
               <Predigital />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item lg={4}>
               <MovieMatcher />
             </Grid>
         </React.Fragment>

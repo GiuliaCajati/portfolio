@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     container:{
         backgroundImage: `url(${"https://i.imgur.com/gworN75.png"})`,
         backgroundSize: 'cover',
+        height:'100%'
     },
     textContainer:{
         width: "40%",
