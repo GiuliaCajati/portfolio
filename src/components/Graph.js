@@ -8,41 +8,30 @@ const Graph = () => {
   
       const options = {
         animationEnabled: true,
-        theme: "light5",
+        theme: "light2",
         title: {
-          text: "In my free time, I like to spendmy time..."
+          text: "I like to spend my free time...",
+          fontSize: 25,
         },
-        data: [{				
+        data: [{		
+              		
                   type: "bar",
                   dataPoints: [
-                      { label: "Running",  y: 30  },
-                      { label: "Boxing", y: 15  },
-                      { label: "Traveling", y: 25  },
-                      { label: "Eating",  y: 30  },
-                      { label: "Reading",  y: 28  }
+                      { label: "🏃‍♀️Running",  y: 50  },
+                      { label: "🥊Boxing", y: 15  },
+                      { label: "✈️Traveling", y: 25  },
+                      { label: "🍣Eating",  y: 50  },
+                      { label: "📚Reading",  y: 25  },
+                      { label: "🎶Listening to Music ",  y: 50  }
                   ]
          }]
      }
           
      return (
         <div>
-          <CanvasJSChart options = {options}
-              /* onRef = {ref => this.chart = ref} */
-          />
+          <CanvasJSChart options = {options}/>
         </div>
       );
   }
 export default Graph
 
-/* App.js */
-// import React from'react';
-// let Component = React.Component;
-// let CanvasJSReact = require('./canvasjs.react');
-// let CanvasJS = CanvasJSReact.CanvasJS;
-// let CanvasJSChart = CanvasJSReact.CanvasJSChart;
-// const Graph = () => {
-// 		const options = {
-// 			animationEnabled: true,
-// 			theme: "light2",
-// 			title:{
-// 				text: "Most Popular Social Networking 

@@ -54,6 +54,9 @@ const useStyles = makeStyles({
     },
     button:{
         padding: '2%',
+    },
+    graphDiv:{
+        padding:"7%"
     }
   
   });
@@ -121,7 +124,9 @@ const AboutMe = () => {
                             <a target='_blank' href="https://drive.google.com/file/d/1JnTIKhVeisLTpNKVN4_DnI7hhdg2tNFB/view?usp=sharing">Resume</a>
                         </Button>
                     </div>  
+                    <div className={classes.graphDiv}>
                     <Graph/>
+                    </div>
                 </Paper>
 
                 </div>
