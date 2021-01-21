@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         backgroundSize: 'cover',
     },
     textContainer:{
-        width: "30%",
+        width: "40%",
         marginLeft: '10%',
         paddingTop:'17%'
     },
@@ -23,7 +23,8 @@ const useStyles = makeStyles({
         width: "100%",      
     },
     text:{
-        width: "100%"
+        fontSize: 30,
+        color:'#878787'
     },
     photoContainer:{
        // float:"right", 
@@ -35,6 +36,7 @@ const useStyles = makeStyles({
     },
     scroll:{
         width: '8%',
+        margin: '3%'
     },
   });
 

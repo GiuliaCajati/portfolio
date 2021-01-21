@@ -15,7 +15,8 @@ const useStyles = makeStyles({
   logo: {
     color: "#252936",
     marginRight: "35%",
-    width:"3%"
+    margin: "1%",
+    width:"4%",
   }
 });
 
@@ -43,7 +44,7 @@ export default function NavBar(props) {
         textColor="secondary"
         centered
       >
-        <img src="https://i.imgur.com/yu8lFsj.png"className={classes.logo} />
+        <img src="https://i.imgur.com/wTEb1Dm.png"className={classes.logo} />
         
         <Tab 
         className={classes.root}

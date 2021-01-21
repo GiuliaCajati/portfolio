@@ -7,6 +7,8 @@ import ListItem from '@material-ui/core/ListItem';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import { shadows } from '@material-ui/system';
+import Box from '@material-ui/core/Box';
+import Graph from '../components/Graph.js'
 
 const useStyles = makeStyles({
     container:{
@@ -15,29 +17,43 @@ const useStyles = makeStyles({
     },
     logos:{
         width: '90%', 
+        display: 'flex',
+        marginLeft: '20%'
+    },
+    logoContainer:{
+        background: '#DEE8EA',
+        marginLeft:'10%',
+        marginBottom:'3%',
+        marginTop:'2%',
+        width: '6rem', 
+        height: '6rem'
     },
     logo:{
         height: 100,
-        marginLeft:'10%'
     },
     title:{
-        paddingTop: '5%',
+        paddingTop: '10%',
         width: '25%'
     },
-    paper: {
+    careerPaper: {
         width: '50%',
-        background: '#f2fcff'
-        
+        background: '#DEE8EA',
+        marginRight:'10%',
     },
-    text: {
+    skillsPaper: {
+        width: '50%',
+        background: '#DEE8EA',
+        //display: 'flex',  
+    },
+    careerDiv: {
         padding: '2%',
     },
     paperContainer:{
-       // paddingLeft: '30%',
-        paddingBottom:'5%'
+        paddingBottom:'5%', 
+        display: 'flex',  
     },
     button:{
-        padding: '2%'
+        padding: '2%',
     }
   
   });
@@ -49,66 +65,65 @@ const AboutMe = () => {
             <CssBaseline />
                 <Container maxWidth="xl" className={classes.container}>
                 <Container className={classes.about}>
-                <img className={classes.title} src="https://i.imgur.com/BzNz63a.png"/>
-                <div className={classes.logos} >
-                   
-                        <a target='_blank' href="https://github.com/GiuliaCajati">
-                            <img className={classes.logo}  
-                            src="https://i.imgur.com/ya0lvus.png" 
-                            alt="github"/>
-                        </a>
-                        <a target='_blank' href="https://www.linkedin.com/in/giuliacajati/">
-                            <img className={classes.logo} 
-                            src="https://i.imgur.com/HymmnzB.png" 
-                            alt="linkedin"/>
-                        </a>
-                        <a target='_blank' href="https://giuliacajati.medium.com/">
-                            <img className={classes.logo} 
-                            src="https://i.imgur.com/0SETXjc.png" 
-                            alt="medium"/>
-                        </a>
-                </div>
+                    <img className={classes.title} src="https://i.imgur.com/BzNz63a.png"/>
+                    <div className={classes.logos} >
+                        <Paper
+                        elevation={3}
+                        className={classes.logoContainer} >
+                            <a target='_blank' href="https://github.com/GiuliaCajati">
+                                <img className={classes.logo}  
+                                src="https://i.imgur.com/ya0lvus.png" 
+                                alt="github"/>
+                            </a>
+                        </Paper>
 
-                
-               
-                <div className={classes.paperContainer}>
-                <Paper elevation={3}
-                className={classes.paper}>
-                <div className={classes.text}>
-                    <div>
-                    <h2>Career:</h2>
-                    An open mind and curiosity, have driven me to pursue many amazing experiences. Post undergrad I was given the unique opportunity to participate in the Hilton’s highly selective Management Development program. I quickly adapted to the fast paced environment of Hilton’s largest hotels, and hit records in occupancy, and room revenue.
+                        <Paper
+                        elevation={3}
+                        className={classes.logoContainer} >
+                            <a target='_blank' href="https://www.linkedin.com/in/giuliacajati/">
+                                <img className={classes.logo} 
+                                src="https://i.imgur.com/HymmnzB.png" 
+                                alt="linkedin"/>
+                            </a>
+                        </Paper>
 
-                    After five amazing years in the industry, I became fascinated with the overwhelming influence technology has had on our everyday life. This led me to take a big leap, and begin my software engineering studies at the Flatiron School. This has been an incredibly fulfilling decision. It has been astonishing how quickly time goes by when building incredible projects, and learning new skills. I look forward to seeing what impact I can make through my work. 
+                        <Paper
+                        elevation={3}
+                        className={classes.logoContainer} >
+                            <a target='_blank' href="https://giuliacajati.medium.com/">
+                                <img className={classes.logo} 
+                                src="https://i.imgur.com/0SETXjc.png" 
+                                alt="medium"/>
+                            </a>
+                        </Paper>
                     </div>
-                    <div><h2>Technologies I've been working with recently:</h2>
-                    <List>
-                        <ListItem>
-                        React.js
-                        </ListItem>
-                        <ListItem>
-                        JavaScript (ES6+)
-                        </ListItem>
-                        <ListItem>
-                        Ruby on Rails
-                        </ListItem>
-                        <ListItem>
-                        HTML and CSS
-                        </ListItem>
-                    </List>
-                    
-                   
-                    </div>
+
+                    <div className={classes.paperContainer}>
+                    <Paper elevation={3}
+                    className={classes.careerPaper}>
+                        <div className={classes.careerDiv}>
+                            <div>
+                                <h2>Career:</h2>
+                                An open mind and curiosity, have driven me to pursue many amazing experiences. Post undergrad I was given the unique opportunity to participate in the Hilton’s highly selective Management Development program. I quickly adapted to the fast paced environment of Hilton’s largest hotels, and hit records in occupancy, and room revenue.
+
+                                After five amazing years in the industry, I became fascinated with the overwhelming influence technology has had on our everyday life. This led me to take a big leap, and begin my software engineering studies at the Flatiron School. This has been an incredibly fulfilling decision. It has been astonishing how quickly time goes by when building incredible projects, and learning new skills. I look forward to seeing what impact I can make through my work. 
+                            </div>
+                        </div> 
+                    </Paper>
+                <Paper
+                elevation={3}
+                className={classes.skillsPaper}>
+                    <div><h2>Key Skills:</h2>
+                        Skilled in React.js, Ruby, Ruby on Rails, Javascript, GitHub, Node.js, Redux, Ac2ve Record, SQL, SQLite, Material UI, Front-end Development, Back-end, Development, Web Development,Applica2ons, Soaware, Development, ES6, Redux, Git, Github, CSS, HTML5, Heroku, Postgres
                     </div>
                     <div className={classes.button}>
                         <Button variant="contained" color="primary" component="span">
                             <a target='_blank' href="https://drive.google.com/file/d/1JnTIKhVeisLTpNKVN4_DnI7hhdg2tNFB/view?usp=sharing">Resume</a>
                         </Button>
-                    </div>
-                    
-                    
-                    
+                    </div>  
+                    <Graph/>
                 </Paper>
+
                 </div>
 
                 </Container>  
