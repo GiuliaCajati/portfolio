@@ -11,12 +11,13 @@ const useStyles = makeStyles({
     flexGrow: 1,
     background: "#E7E7E7",
     color: "#252936",
+    height:'5%'
   },
   logo: {
     color: "#252936",
     marginRight: "30%",
-    margin: "1%",
     width:"4%",
+    margin:'0.3%'
   }
 });
 
