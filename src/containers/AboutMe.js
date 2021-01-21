@@ -13,16 +13,16 @@ import Graph from '../components/Graph.js'
 const useStyles = makeStyles({
     container:{
         backgroundColor: '#D6DBE0' , 
-        height: '100%',
+        //height: '100%',
     },
     logos:{
         width: '90%', 
         display: 'flex',
-        marginLeft: '20%'
+        // marginRight: '10%'
     },
     logoContainer:{
         background: '#DEE8EA',
-        marginLeft:'10%',
+        marginLeft:'20%',
         marginBottom:'3%',
         marginTop:'2%',
         width: '6rem', 

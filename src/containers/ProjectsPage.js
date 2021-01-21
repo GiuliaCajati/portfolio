@@ -12,6 +12,7 @@ import Grow from '@material-ui/core/Grow';
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor:"#DEE8EA",
+
   },
   title: {
     marginBottom: '2%',

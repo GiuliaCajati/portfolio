@@ -18,6 +18,7 @@ const useStyles = makeStyles({
     width: '100%',
   },
 
+
 })
 
 const App = () => {
@@ -47,7 +48,7 @@ const App = () => {
             <NavBar executeScroll={executeScroll} />
           </div>
         </Grow>
-        <Welcome welcomeRef={welcomeRef} />
+        <Welcome />
         <ProjectsPage projectsRef={projectsRef}/>
         <AboutMe aboutMeRef={aboutMeRef}/>
         

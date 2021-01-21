@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
   logo: {
     color: "#252936",
-    marginRight: "35%",
+    marginRight: "30%",
     margin: "1%",
     width:"4%",
   }
