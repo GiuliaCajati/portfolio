@@ -42,10 +42,10 @@ export default function ProjectsPage(props) {
               <HotelToolkit />
             </Grid>
             <Grid item lg={4}>
-              <BonAppetit />
+              <FetchAdate />
             </Grid>
             <Grid item lg={4}>
-              <FetchAdate />
+             <BonAppetit />
             </Grid>
             <Grid item lg={4}>
               <Predigital />

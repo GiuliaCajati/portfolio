@@ -60,9 +60,9 @@ const BonAppetit = () => {
                                     <ListItem>
                                         <a target='_blank' href="https://www.youtube.com/watch?v=IKpoDlZfW1A">Demo Video</a>
                                     </ListItem>
-                                    <ListItem>
+                                    {/* <ListItem>
                                         <a target='_blank' href="https://giuliacajati.github.io/bon-appetit-front-end/">Click here to check it out!</a>
-                                    </ListItem>
+                                    </ListItem> */}
                                     <ListItem>
                                         <a target='_blank' href="https://github.com/GiuliaCajati/bon-appetit-front-end">GitHub</a>
                                     </ListItem>
