@@ -50,7 +50,7 @@ const HotelToolkit = () => {
                                     <ListItem><i><b>Overview: </b> A platform that facilitates communication among hotel managers, and team members.</i></ListItem>
                                     <ListItem>
                                         <i>
-                                            <b>Built With:</b>React.js
+                                            <b>Built With:</b>React.js, and Ruby on Rails API
                                         </i>
                                     </ListItem>
                                     <ListItem>

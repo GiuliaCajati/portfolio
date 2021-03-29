@@ -53,7 +53,7 @@ const FetchAdate = () => {
                                 </ListItem>
                                 <ListItem>
                                     <i>
-                                        <b>Built With:</b>React.js
+                                        <b>Built With:</b>React.js, and Ruby on Rails API
                                     </i>
                                 </ListItem>
                                 <ListItem>

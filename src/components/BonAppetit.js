@@ -54,7 +54,7 @@ const BonAppetit = () => {
                                     <ListItem><i><b>Overview: </b> An interactive application, where users can share, view photos, and recipes.</i></ListItem>
                                     <ListItem>
                                         <i>
-                                            <b>Built With:</b>React.js
+                                            <b>Built With:</b>React.js, and Ruby on Rails API
                                         </i>
                                     </ListItem>
                                     <ListItem>
