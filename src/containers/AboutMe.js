@@ -121,7 +121,7 @@ const AboutMe = () => {
                     </div>
                     <div className={classes.button}>
                         <Button variant="contained" color="primary" component="span">
-                            <a target='_blank' href="https://drive.google.com/file/d/1VVWkZ7dqFdZGneNTGrjEbQVMwc6TMnSA/view?usp=sharing">Resume</a>
+                            <a target='_blank' href="https://drive.google.com/file/d/1dNAr9WnQQtKu3GI5U_Ubo4IqVQhAhv55/view?usp=sharing">Resume</a>
                         </Button>
                     </div>  
                     <div className={classes.graphDiv}>
