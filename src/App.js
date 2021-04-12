@@ -6,8 +6,6 @@ import AboutMe from './containers/AboutMe'
 import Welcome from './components/Welcome'
 import { makeStyles } from '@material-ui/core/styles';
 import Grow from '@material-ui/core/Grow';
-import * as Scroll from 'react-scroll';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const useStyles = makeStyles({
   nav: {
