@@ -1,4 +1,3 @@
-
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import NavBar from './containers/NavBar'
@@ -7,18 +6,14 @@ import AboutMe from './containers/AboutMe'
 import Welcome from './components/Welcome'
 import { makeStyles } from '@material-ui/core/styles';
 import Grow from '@material-ui/core/Grow';
-import {  Switch, Route } from 'react-router-dom';//withRouter
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-
 
 const useStyles = makeStyles({
   nav: {
     position:'fixed',
     width: '100%',
   },
-
-
 })
 
 const App = () => {
@@ -54,12 +49,7 @@ const App = () => {
         
       </div>
 
-      {/* <Switch>
-      <Route exact path="/" component={Welcome} />
-      <Route exact path="/welcome" component={Welcome} />
-      <Route exact path="/projects" component={ProjectsPage} />
-      <Route exact path="/about" component={AboutMe} />
-      </Switch> */}
+
       
     </div>
   );

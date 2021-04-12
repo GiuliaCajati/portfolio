@@ -13,7 +13,6 @@ import MovieMatcher from '../components/MovieMatcher.js'
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor:"#DEE8EA",
-
   },
   title: {
     marginBottom: '2%',
