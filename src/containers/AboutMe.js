@@ -1,24 +1,18 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
-import { shadows } from '@material-ui/system';
-import Box from '@material-ui/core/Box';
 import Graph from '../components/Graph.js'
 
 const useStyles = makeStyles({
     container:{
         backgroundColor: '#D6DBE0' , 
-        //height: '100%',
     },
     logos:{
         width: '90%', 
-        display: 'flex',
-        // marginRight: '10%'
+        display: 'flex'
     },
     logoContainer:{
         background: '#DEE8EA',

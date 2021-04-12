@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Grow from '@material-ui/core/Grow';
+
 import HotelToolkit from '../components/HotelToolkit.js'
 import BonAppetit from '../components/BonAppetit.js'
 import FetchAdate from '../components/FetchAdate.js'
 import Predigital from '../components/Predigital.js'
 import MovieMatcher from '../components/MovieMatcher.js'
-import Grow from '@material-ui/core/Grow';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
