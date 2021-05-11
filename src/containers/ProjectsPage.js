@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Grow from '@material-ui/core/Grow';
 
+import Hackathon from '../components/Hackathon.js'
 import HotelToolkit from '../components/HotelToolkit.js'
 import BonAppetit from '../components/BonAppetit.js'
 import FetchAdate from '../components/FetchAdate.js'
@@ -38,6 +39,9 @@ export default function ProjectsPage(props) {
   function FormRow() {
     return (
         <React.Fragment>
+            <Grid item lg={4}>
+              <Hackathon />
+            </Grid>
             <Grid item lg={4}>
               <HotelToolkit />
             </Grid>
